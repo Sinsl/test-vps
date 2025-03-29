@@ -10,7 +10,7 @@ function App() {
   const onSubmitHandler = async () => {
     
     try {
-        const res = await fetch('http://localhost:8000')
+        const res = await fetch(import.meta.env.VITE_BACK_URL)
     console.log(res);
         if(res.ok) {
             setIsError(false)
