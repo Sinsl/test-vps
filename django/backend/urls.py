@@ -22,6 +22,6 @@ def root_view(request):
     return JsonResponse({"msg": "server is work"})
 
 urlpatterns = [
-    path('', root_view),
+    path('api/', root_view),
     path('admin/', admin.site.urls),
 ]
